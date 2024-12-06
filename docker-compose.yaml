@@ -1,0 +1,46 @@
+version: '3'
+services:
+  myappdb:
+    image: "postgres:latest"
+    container_name: myappdb
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: myappdb
+      POSTGRES_PASSWORD: abc123
+      POSTGRES_DB: minisplitwise
+    ports:
+      - 5432:5432
+    networks:
+      - my-network
+  
+  frontend:
+    image: chinx23/frontend:latest
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - my-network
+  
+  backend:
+    image: chinx23/backend:latest
+    ports:
+      - "8081:8081"
+    depends_on:
+      - myappdb
+    container_name: backend
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://myappdb:5432/minisplitwise?createDatabaseIfNotExist=true
+    volumes:
+      - logs-for-elk:/app/logs
+    networks: 
+      - my-network
+
+volumes:
+  postgres-data:
+    driver: local
+  logs-for-elk:
+    driver: local
+networks:
+  my-network:
+    driver: bridge
