@@ -15,7 +15,7 @@ services:
       - my-network
   
   frontend:
-    image: pink27/frontend:latest
+    image: chinx23/frontend:latest
     container_name: frontend
     ports:
       - "3000:3000"
@@ -23,7 +23,7 @@ services:
       - my-network
   
   backend:
-    image: pink27/backend:latest
+    image: chinx23/backend:latest
     ports:
       - "8081:8081"
     depends_on:
