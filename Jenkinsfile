@@ -1,8 +1,8 @@
 pipeline
 {
     environment{
-        BACKEND_IMAGE_NAME = "chinx23/backend"
-        FRONTEND_IMAGE_NAME = "chinx23/frontend"
+        BACKEND_IMAGE_NAME = "pink27/backend"
+        FRONTEND_IMAGE_NAME = "pink27/frontend"
         POSTGRESQL_IMAGE="postgres:latest"
         POSTGRES_USER="myappdb"
         POSTGRES_PSSWD="abc123"
