@@ -62,7 +62,7 @@ function Home({user}) {
             </ListItem>
             <ListItem>
               <Icon mr={2} />
-              Automatically split bills evenly or by custom amounts.
+              Automatically log bills evenly or by custom amounts.
             </ListItem>
             <ListItem>
               <Icon as={CalendarIcon} mr={2} />
@@ -76,7 +76,7 @@ function Home({user}) {
       {/* Benefits Section */}
       <Box p={6} boxShadow="dark-lg" rounded='md' bgColor="green.100" mt={2} h="auto" >
         <Heading as="h2" fontSize="3xl" textAlign="center">
-          Live life simpler, splitwise!
+          Live life simpler, ExpenseTracker!
         </Heading>
         <Text fontSize="lg" textAlign="center">
           This tracker takes the hassle out of your personal finances:
@@ -103,7 +103,7 @@ function Home({user}) {
             "ExpenseTracker is a lifesaver for our travel plans!" - John Doe
           </Quote>
           <Quote boxSize="sm" p={4}>
-            "Finally, a way to split bills fairly and without drama." - Jane Smith
+            "Finally, a way to note bills fairly and without drama." - Jane Smith
           </Quote>
         </HStack>
 
