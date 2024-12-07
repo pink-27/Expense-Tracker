@@ -28,14 +28,14 @@ function Header({user}) {
       <DrawerOverlay color='teal'/>
       <DrawerContent color='white' backgroundImage={bg} backgroundSize='cover'>
         <DrawerCloseButton />
-        <DrawerHeader>MiniSplitwise</DrawerHeader>
+        <DrawerHeader>ExpenseTracker</DrawerHeader>
 
         <DrawerBody>
           <VStack flexDir='column' alignItems='flex-start'>
             <Link onClick={onClose} to="/">Home</Link>
             <Link onClick={onClose} to="/trackExpense">Track Expenses</Link>
-            <Link onClick={onClose} to="/">Groups</Link>
-            <Link onClick={onClose} to="">Split Bills</Link>
+            {/* <Link onClick={onClose} to="/">Groups</Link>
+            <Link onClick={onClose} to="">Split Bills</Link> */}
             {/* <Link onClick={onClose} to="/">Contact</Link> */}
           </VStack>
         </DrawerBody>
@@ -45,7 +45,7 @@ function Header({user}) {
       {user!==null && user!==undefined ? 
     <Button ref={btnRef} m='2' p='1' color='teal.800' backgroundColor='white' onClick={onOpen}> <HamburgerIcon /></Button>:""}
     <Link to="/"><Image boxSize='50px' objectFit='cover' borderRadius='full' color='gray' src={logo}></Image></Link>
-      <Heading as="h1" p='2' fontSize="4xl">MiniSplitwise</Heading>
+      <Heading as="h1" p='2' fontSize="4xl">ExpenseTracker</Heading>
       <Spacer/>
       {
         user===null || user===undefined?<>

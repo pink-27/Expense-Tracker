@@ -30,7 +30,7 @@ function Home({user}) {
             color="teal.300"
             textAlign="center" // Center text for better focus
 						>
-            Splitwise just got Mini!
+            Tracker got Mini!
           </Heading>
           <Text fontSize="lg" color="teal.300" textAlign="center">
             Track group expenses easily, share bills, and settle up in seconds.
@@ -79,7 +79,7 @@ function Home({user}) {
           Live life simpler, splitwise!
         </Heading>
         <Text fontSize="lg" textAlign="center">
-          MiniSplitwise takes the hassle out of group finances:
+          This tracker takes the hassle out of your personal finances:
         </Text>
 				<Center>
 
@@ -100,7 +100,7 @@ function Home({user}) {
         </Heading>
         <HStack spacing={6} mt={4}>
           <Quote boxSize="sm" p={4}>
-            "MiniSplitwise is a lifesaver for our travel group!" - John Doe
+            "ExpenseTracker is a lifesaver for our travel plans!" - John Doe
           </Quote>
           <Quote boxSize="sm" p={4}>
             "Finally, a way to split bills fairly and without drama." - Jane Smith
