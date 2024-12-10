@@ -1,0 +1,11 @@
+# roles/minikube_manage/tasks/main.yml
+- name: delete Minikube
+  command: minikube delete
+  ignore_errors: true  # Continue even if Minikube is not running
+
+- name: Delete Minikube
+  command: minikube delete
+  ignore_errors: true  # Continue even if Minikube is not found
+
+- name: Start Minikube
+  command: minikube start

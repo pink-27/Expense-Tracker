@@ -1,0 +1,13 @@
+# roles/kubernetes_setup/tasks/main.yml
+- name: Ensure kubectl is installed
+  command: kubectl version --client
+  register: kubectl_installed
+  failed_when: kubectl_installed.rc != 0
+  ignore_errors: true
+
+- name: Apply Kubernetes manifests
+  k8s:
+    state: present
+    definition: "{{ item }}"
+  with_fileglob:
+    - /Users/vinnie/Desktop/sems/sem7/SPE/mega_proj/Expense-Tracker/k8 manifests/*.yaml

@@ -5,4 +5,6 @@
     - docker
     - docker_compose
     - docker_setup
+    - minikube_manage
+    - kubernetes_setup
     - cleanup
