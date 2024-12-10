@@ -2,4 +2,7 @@
 - name: Pull and run docker image
   hosts: host_machine
   roles:
+    - docker
+    - docker_compose
     - docker_setup
+    - cleanup

@@ -1,0 +1,11 @@
+---
+- name: Check if Docker Compose is installed
+  command: docker-compose --version
+  register: compose_version
+  ignore_errors: true
+
+- name: Install Docker Compose if not present
+  apt:
+    name: docker-compose
+    state: present
+  when: compose_version.rc != 0

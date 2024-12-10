@@ -1,0 +1,4 @@
+#SPDX-License-Identifier: MIT-0
+---
+- name: Prune unwanted images
+  command: docker image prune --force
