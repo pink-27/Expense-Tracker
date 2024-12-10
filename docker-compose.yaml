@@ -1,8 +1,7 @@
-version: '3'
+version: '3.8'  # Use an updated version or omit this line for Docker Compose V2+
 services:
   myappdb:
     image: "postgres:latest"
-    container_name: myappdb
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
@@ -16,26 +15,24 @@ services:
   
   frontend:
     image: pink27/frontend:latest
-    container_name: frontend
     ports:
       - "3000:3000"
     networks:
       - my-network
     deploy:
       replicas: 2  # Scale to 2 instances
-
+  
   backend:
     image: pink27/backend:latest
     ports:
       - "8081:8081"
     depends_on:
       - myappdb
-    container_name: backend
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://myappdb:5432/minisplitwise?createDatabaseIfNotExist=true
     volumes:
       - logs-for-elk:/app/logs
-    networks: 
+    networks:
       - my-network
     deploy:
       replicas: 2  # Scale to 2 instances
