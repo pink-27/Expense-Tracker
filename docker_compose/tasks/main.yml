@@ -9,3 +9,4 @@
     name: docker-compose
     state: present
   when: compose_version.rc != 0
+
