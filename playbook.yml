@@ -1,6 +1,7 @@
 ---
 - name: Pull and run docker image
   hosts: host_machine
+  
   # become: yes
   tasks:
     - name: Check if Docker is installed
