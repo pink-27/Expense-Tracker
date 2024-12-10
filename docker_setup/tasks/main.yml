@@ -10,6 +10,6 @@
     chdir: ~/
 
 - name: Run the pulled Docker images in detached mode
-  command: docker-compose up -d --build --scale frontend=2 --scale backend=2
+  command: docker-compose up -d --build
 
 
