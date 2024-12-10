@@ -21,7 +21,9 @@ services:
       - "3000:3000"
     networks:
       - my-network
-  
+    deploy:
+      replicas: 2  # Scale to 2 instances
+
   backend:
     image: pink27/backend:latest
     ports:
@@ -35,12 +37,15 @@ services:
       - logs-for-elk:/app/logs
     networks: 
       - my-network
+    deploy:
+      replicas: 2  # Scale to 2 instances
 
 volumes:
   postgres-data:
     driver: local
   logs-for-elk:
     driver: local
+
 networks:
   my-network:
     driver: bridge
