@@ -35,12 +35,47 @@ services:
       - logs-for-elk:/app/logs
     networks: 
       - my-network
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.12
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+    networks:
+      - my-network
+  
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.17.12
+    container_name: logstash
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - logs-for-elk:/app/logs
+    depends_on:
+      - elasticsearch
+    ports:
+      - "5000:5000"
+    networks:
+      - my-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.12
+    container_name: kibana
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - my-network
 
 volumes:
   postgres-data:
     driver: local
   logs-for-elk:
     driver: local
+
 networks:
   my-network:
     driver: bridge
