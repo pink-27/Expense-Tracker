@@ -1,0 +1,165 @@
+2024-12-14T18:46:11.624Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Starting MiniSplitwiseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2024-12-14T18:46:11.628Z DEBUG 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-14T18:46:11.631Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T18:46:12.514Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T18:46:12.593Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2024-12-14T18:46:13.783Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-12-14T18:46:13.795Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T18:46:13.796Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-14T18:46:13.873Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T18:46:13.875Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2187 ms
+2024-12-14T18:46:14.052Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T18:46:14.127Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-12-14T18:46:15.026Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T18:46:15.394Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22175d4f
+2024-12-14T18:46:15.399Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T18:46:15.481Z  INFO 1 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-14T18:46:16.688Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-14T18:46:16.696Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T18:46:17.039Z  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-14T18:46:17.672Z DEBUG 1 --- [main] c.e.M.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-14T18:46:17.791Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T18:46:19.327Z  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50b734c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2744dcae, org.springframework.security.web.context.SecurityContextHolderFilter@7418d76e, org.springframework.security.web.header.HeaderWriterFilter@256a0d95, org.springframework.web.filter.CorsFilter@16d0e521, org.springframework.security.web.authentication.logout.LogoutFilter@217235f5, com.example.MiniSplitwise.config.JwtAuthenticationFilter@7a1b8a46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11ede87f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44e4cb76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@634ca3e7, org.springframework.security.web.session.SessionManagementFilter@68af87ad, org.springframework.security.web.access.ExceptionTranslationFilter@4b55ff0a, org.springframework.security.web.access.intercept.AuthorizationFilter@5234b61a]
+2024-12-14T18:46:19.705Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-14T18:46:19.722Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Started MiniSplitwiseApplication in 8.616 seconds (process running for 9.592)
+2024-12-14T18:46:19.731Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running Splitwise
+2024-12-14T18:52:53.285Z  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T18:52:53.297Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T18:52:53.313Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T18:53:03.328Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Starting MiniSplitwiseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2024-12-14T18:53:03.329Z DEBUG 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-14T18:53:03.331Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T18:53:05.691Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T18:53:05.925Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201 ms. Found 4 JPA repository interfaces.
+2024-12-14T18:53:07.698Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-12-14T18:53:07.723Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T18:53:07.725Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-14T18:53:07.972Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T18:53:07.978Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4561 ms
+2024-12-14T18:53:08.517Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T18:53:08.648Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-12-14T18:53:09.267Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T18:53:10.285Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30865a90
+2024-12-14T18:53:10.295Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T18:53:10.606Z  INFO 1 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-14T18:53:12.971Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-14T18:53:13.024Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T18:53:13.828Z  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-14T18:53:14.766Z DEBUG 1 --- [main] c.e.M.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-14T18:53:14.941Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T18:53:17.092Z  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28393e82, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@697a0948, org.springframework.security.web.context.SecurityContextHolderFilter@256a0d95, org.springframework.security.web.header.HeaderWriterFilter@39549f33, org.springframework.web.filter.CorsFilter@7cf63b9a, org.springframework.security.web.authentication.logout.LogoutFilter@15e1f8fe, com.example.MiniSplitwise.config.JwtAuthenticationFilter@1ca610a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bf03fee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44f0ff2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4776e209, org.springframework.security.web.session.SessionManagementFilter@5e1a986c, org.springframework.security.web.access.ExceptionTranslationFilter@6f731759, org.springframework.security.web.access.intercept.AuthorizationFilter@4b41587d]
+2024-12-14T18:53:18.009Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-14T18:53:18.111Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Started MiniSplitwiseApplication in 15.732 seconds (process running for 17.239)
+2024-12-14T18:53:18.145Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running Splitwise
+2024-12-14T19:08:00.367Z  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:08:00.392Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T19:08:00.413Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T19:08:07.191Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Starting MiniSplitwiseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2024-12-14T19:08:07.194Z DEBUG 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-14T19:08:07.202Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T19:08:09.006Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T19:08:09.211Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 4 JPA repository interfaces.
+2024-12-14T19:08:11.050Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-12-14T19:08:11.089Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T19:08:11.096Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-14T19:08:11.265Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T19:08:11.271Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3944 ms
+2024-12-14T19:08:11.680Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T19:08:11.865Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-12-14T19:08:13.398Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T19:08:14.075Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6134ac4a
+2024-12-14T19:08:14.081Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T19:08:14.297Z  INFO 1 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-14T19:08:16.590Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-14T19:08:16.607Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:08:17.271Z  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-14T19:08:18.109Z DEBUG 1 --- [main] c.e.M.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-14T19:08:18.302Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T19:08:19.304Z  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@697a0948, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cf63b9a, org.springframework.security.web.context.SecurityContextHolderFilter@2f3928ac, org.springframework.security.web.header.HeaderWriterFilter@dbddbe3, org.springframework.web.filter.CorsFilter@4776e209, org.springframework.security.web.authentication.logout.LogoutFilter@110b7837, com.example.MiniSplitwise.config.JwtAuthenticationFilter@49433c98, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31834a2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22ead351, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@265a094b, org.springframework.security.web.session.SessionManagementFilter@4b55ff0a, org.springframework.security.web.access.ExceptionTranslationFilter@1f84327b, org.springframework.security.web.access.intercept.AuthorizationFilter@4aebee4b]
+2024-12-14T19:08:19.806Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-14T19:08:19.866Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Started MiniSplitwiseApplication in 13.475 seconds (process running for 14.39)
+2024-12-14T19:08:19.878Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running Splitwise
+2024-12-14T19:13:05.922Z  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:13:05.935Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T19:13:05.950Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T19:13:21.316Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Starting MiniSplitwiseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2024-12-14T19:13:21.322Z DEBUG 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-14T19:13:21.333Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T19:13:24.373Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T19:13:24.612Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 4 JPA repository interfaces.
+2024-12-14T19:13:26.123Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-12-14T19:13:26.173Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T19:13:26.174Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-14T19:13:26.392Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T19:13:26.395Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4800 ms
+2024-12-14T19:13:26.678Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T19:13:26.855Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-12-14T19:13:27.503Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T19:13:27.968Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74518890
+2024-12-14T19:13:27.979Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T19:13:28.158Z  INFO 1 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-14T19:13:29.993Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-14T19:13:30.006Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:13:30.571Z  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-14T19:13:31.664Z DEBUG 1 --- [main] c.e.M.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-14T19:13:31.908Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T19:13:32.842Z  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79957f11, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@217235f5, org.springframework.security.web.context.SecurityContextHolderFilter@599a9cb2, org.springframework.security.web.header.HeaderWriterFilter@153cb763, org.springframework.web.filter.CorsFilter@4b41587d, org.springframework.security.web.authentication.logout.LogoutFilter@7675c171, com.example.MiniSplitwise.config.JwtAuthenticationFilter@1f9d4b0e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e1a986c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46a795de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4aebee4b, org.springframework.security.web.session.SessionManagementFilter@dbddbe3, org.springframework.security.web.access.ExceptionTranslationFilter@3d3a1903, org.springframework.security.web.access.intercept.AuthorizationFilter@28ee0a3c]
+2024-12-14T19:13:33.397Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-14T19:13:33.424Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Started MiniSplitwiseApplication in 12.878 seconds (process running for 14.236)
+2024-12-14T19:13:33.437Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running Splitwise
+2024-12-14T19:19:32.436Z  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:19:32.453Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T19:19:32.464Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T19:22:27.904Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Starting MiniSplitwiseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2024-12-14T19:22:27.914Z DEBUG 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-14T19:22:27.920Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T19:22:30.529Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T19:22:30.800Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 229 ms. Found 4 JPA repository interfaces.
+2024-12-14T19:22:32.534Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-12-14T19:22:32.599Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T19:22:32.600Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-14T19:22:32.798Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T19:22:32.800Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4733 ms
+2024-12-14T19:22:33.469Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T19:22:33.628Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-12-14T19:22:34.639Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T19:22:35.639Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c2d4cc6
+2024-12-14T19:22:35.656Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T19:22:35.831Z  INFO 1 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-14T19:22:38.421Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-14T19:22:38.439Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:22:39.127Z  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-14T19:22:40.331Z DEBUG 1 --- [main] c.e.M.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-14T19:22:40.598Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T19:22:42.299Z  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18d47df0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28393e82, org.springframework.security.web.context.SecurityContextHolderFilter@46a795de, org.springframework.security.web.header.HeaderWriterFilter@1f84327b, org.springframework.web.filter.CorsFilter@697a0948, org.springframework.security.web.authentication.logout.LogoutFilter@773c2214, com.example.MiniSplitwise.config.JwtAuthenticationFilter@7f79edee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f3928ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31834a2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cf63b9a, org.springframework.security.web.session.SessionManagementFilter@3a1b36a1, org.springframework.security.web.access.ExceptionTranslationFilter@412ebe64, org.springframework.security.web.access.intercept.AuthorizationFilter@217235f5]
+2024-12-14T19:22:43.093Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-14T19:22:43.149Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Started MiniSplitwiseApplication in 16.323 seconds (process running for 17.731)
+2024-12-14T19:22:43.182Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running Splitwise
+2024-12-14T19:31:20.947Z  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:31:20.962Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T19:31:20.984Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T19:31:47.780Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Starting MiniSplitwiseApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2024-12-14T19:31:47.783Z DEBUG 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-14T19:31:47.787Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T19:31:49.786Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T19:31:49.961Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 4 JPA repository interfaces.
+2024-12-14T19:31:51.276Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-12-14T19:31:51.319Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T19:31:51.327Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-14T19:31:51.491Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T19:31:51.499Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3615 ms
+2024-12-14T19:31:51.787Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T19:31:51.990Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-12-14T19:31:52.731Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T19:31:54.370Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6134ac4a
+2024-12-14T19:31:54.381Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T19:31:54.705Z  INFO 1 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-14T19:31:56.849Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-14T19:31:56.860Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T19:31:57.211Z  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-14T19:31:57.855Z DEBUG 1 --- [main] c.e.M.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-14T19:31:58.009Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T19:31:59.089Z  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@697a0948, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7cf63b9a, org.springframework.security.web.context.SecurityContextHolderFilter@2f3928ac, org.springframework.security.web.header.HeaderWriterFilter@dbddbe3, org.springframework.web.filter.CorsFilter@4776e209, org.springframework.security.web.authentication.logout.LogoutFilter@110b7837, com.example.MiniSplitwise.config.JwtAuthenticationFilter@49433c98, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31834a2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22ead351, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@265a094b, org.springframework.security.web.session.SessionManagementFilter@4b55ff0a, org.springframework.security.web.access.ExceptionTranslationFilter@1f84327b, org.springframework.security.web.access.intercept.AuthorizationFilter@4aebee4b]
+2024-12-14T19:31:59.675Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-14T19:31:59.693Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Started MiniSplitwiseApplication in 12.674 seconds (process running for 14.29)
+2024-12-14T19:31:59.703Z  INFO 1 --- [main] c.e.M.MiniSplitwiseApplication           : Running Splitwise
