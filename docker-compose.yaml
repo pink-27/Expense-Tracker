@@ -53,8 +53,10 @@ services:
       - logs-for-elk:/app/logs
     depends_on:
       - elasticsearch
+
     ports:
-      - "5000:5000"
+      - "5001:5000"  # Changed to 5001 on the host machine
+
     networks:
       - my-network
 
