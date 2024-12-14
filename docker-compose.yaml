@@ -53,10 +53,8 @@ services:
       - logs-for-elk:/app/logs
     depends_on:
       - elasticsearch
-
     ports:
-      - "5001:5000"  # Changed to 5001 on the host machine
-
+      - "5001:5000"
     networks:
       - my-network
 
@@ -64,7 +62,7 @@ services:
     image: docker.elastic.co/kibana/kibana:7.17.12
     container_name: kibana
     environment:
-      ELASTICSEARCH_HOSTS: http://localhost:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
     ports:
       - "5601:5601"
     depends_on:
