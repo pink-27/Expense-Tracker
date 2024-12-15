@@ -9,4 +9,6 @@
   tasks:
     - name: Roll out the Kubernetes deployment
       shell: kubectl rollout restart deployment/frontend
+    - name: Forward port for frontend service
+      shell: kubectl port-forward svc/frontend-service 30002:3000
 
