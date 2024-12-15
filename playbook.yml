@@ -6,3 +6,6 @@
     - docker_compose
     - docker_setup
     - cleanup
+  tasks:
+    - name: Roll out the Kubernetes deployment
+      shell: kubectl rollout restart deployment/striide-frontend
