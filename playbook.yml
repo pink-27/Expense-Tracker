@@ -9,9 +9,5 @@
   tasks:
     - name: Roll out the Kubernetes deployment
       shell: kubectl rollout restart deployment/frontend
-    - name: Wait for 10 seconds to ensure the pod is initializing
-      pause:
-        seconds: 10
-    - name: Forward port for frontend service
-      shell: kubectl port-forward svc/frontend-service 30002:3000 > /dev/null 2>&1 &
+
 
