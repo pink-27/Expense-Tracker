@@ -8,4 +8,5 @@
     - cleanup
   tasks:
     - name: Roll out the Kubernetes deployment
-      shell: kubectl rollout restart frontend
+      shell: kubectl rollout restart deployment/frontend
+
