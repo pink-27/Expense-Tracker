@@ -142,10 +142,6 @@ Available on DockerHub:
 - OCR for automated bill data extraction
 - Notification service integration
 
-## Contributors
-
-- Shishir Shahi (IMT2021029)
-- Vihan Vashishth (IMT2021065)
 
 ## License
 
