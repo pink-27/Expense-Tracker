@@ -1,4 +1,4 @@
-# MiniSplitwise
+# ExpenseTracker
 
 A full-stack expense tracking application that helps users manage their personal expenses efficiently. Built with React frontend and Spring Boot backend, containerized with Docker, and orchestrated using Kubernetes.
 
